@@ -4,4 +4,4 @@ from task import tarefa
 
 scheduler = BackgroundScheduler()
 
-scheduler.add_job(tarefa, trigger='interval', seconds=3)
+scheduler.add_job(tarefa, trigger='interval', seconds=5)
