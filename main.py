@@ -9,6 +9,11 @@ app = FastAPI()
 scheduler.start()
 
 
+@app.get('/')
+def get():
+    return 'Página Principal'
+
+
 @app.post('/')
 def post():
     from task import contador
